@@ -31,7 +31,7 @@ and copy all of them and rename it to virtioa.qcow2
 
 
 cd vtmgmt-19.3.0
-/opt/qemu/bin/qemu-img create -f qcow2 virtioa.qcow2 100G
+/opt/qemu/bin/qemu-img create -f qcow2 virtiob.qcow2 100G
 
 /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
 
