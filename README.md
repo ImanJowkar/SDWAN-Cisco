@@ -38,7 +38,16 @@ cd vtmgmt-19.3.0
 
 
 ```
+# add csr image
 
+```sh
+cd /opt/unetlab/addons/qemu
+mkdir csr1000vng-ucmk9.16.12.1b-sdwan
+# copy and rename and fix permision
+
+
+
+```
 
 # pull viso-images
 
