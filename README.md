@@ -57,3 +57,37 @@ vios-adventerprisek9-m.SPA.159-3.M3
 viosl2-adventerprisek9-m.ssa.high_iron_20190423
 
 ```
+
+we need below things:
+* Organization name
+* System-IP
+* Address of the vBond Controller
+* Site-ID
+* IP address of VPN0
+* [optional] an address for vpn512
+* [optional] NTP server
+
+
+# Organization-Name: IMAN-SDWAN
+
+
+# Domain-name: IMAN-SDWAN.local
+
+
+# vmanage configurations
+
+```sh
+config terminal
+system
+site-id 1
+system-ip 1.1.1.2
+organization-name "IMAN-SDWAN"
+vbond 17.25.2.2
+ntp server 172.2.2.2
+vpn 0
+ip route 0.0.0.0/0 192.168.1.1
+interface eth0
+ip address 192.168.1.2/24
+no shutdown
+tunnel-interface
+```
